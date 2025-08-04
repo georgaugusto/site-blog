@@ -150,7 +150,7 @@ export function BlogList({ posts }: ClientBlogSearchProps) {
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post, index) => (
-            <PostCards key={post.slug} post={post} priority={index === 0} />
+            <PostCard key={post.slug} post={post} priority={index === 0} />
           ))
         ) : (
           <div className="col-span-full text-center py-12">
