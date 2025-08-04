@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://slc-blog.vercel.app"), // Ajustar URL
+  metadataBase: new URL("https://site-blog-92u5.vercel.app"), // Ajustar URL
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://slc-blog.vercel.app", // Ajustar URL
+    url: "https://site-blog-92u5.vercel.app", // Ajustar URL
     siteName: "SLC Blog",
     title: "SLC Blog",
     description:

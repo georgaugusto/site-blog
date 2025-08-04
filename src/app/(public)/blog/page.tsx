@@ -13,13 +13,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Blog",
     description: "Dicas e estratégias para impulsionar seu negócio",
-    url: "https://nextjs-fundamentos.vercel.app/og-image.jpg",
+    url: "https://site-blog-92u5.vercel.app/og-image.jpg",
     siteName: "Site.Set",
     locale: "pt-BR",
     type: "website",
     images: [
       {
-        url: "https://nextjs-fundamentos.vercel.app/og-image.jpg",
+        url: "https://site-blog-92u5.vercel.app/og-image.jpg",
         width: 800,
         height: 600,
         alt: "Site.Set",
