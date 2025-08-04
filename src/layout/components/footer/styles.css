@@ -1,0 +1,8 @@
+.footer-link {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.footer-link.active {
+  font-weight: 500;
+}

@@ -1,0 +1,19 @@
+.feature-tag {
+  background-color: var(--color-background-inverse-primary);
+  color: var(--color-content-inverse-primary);
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600; /* font-semibold */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  width: fit-content;
+}
+
+.feature-title {
+  color: var(--color-content-primary);
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  line-height: 1.2;
+  margin-top: 1rem;
+}

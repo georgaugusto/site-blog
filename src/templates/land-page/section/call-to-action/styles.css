@@ -1,0 +1,115 @@
+/* CallToAction - Seção de chamada para ação */
+.cta-container {
+  background: linear-gradient(
+    to bottom,
+    var(--color-background-primary),
+    var(--color-background-secondary)
+  );
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 6rem 1rem;
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.cta-icon-container {
+  padding: 1rem;
+  background-color: var(--color-background-tertiary);
+  width: fit-content;
+  border-radius: 50%; /* rounded-full */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-icon {
+  color: var(--color-content-primary);
+  height: 1.5rem; /* h-6 */
+  width: 1.5rem; /* w-6 */
+}
+
+.cta-title {
+  color: var(--color-content-primary);
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  line-height: 1.2;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.cta-button-container {
+  margin-top: 1.5rem; /* mt-6 */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .cta-container {
+    padding: 6rem 1rem;
+  }
+
+  .cta-title {
+    font-size: 2.25rem; /* text-4xl */
+  }
+
+  .cta-icon-container {
+    padding: 1.25rem;
+  }
+
+  .cta-icon {
+    height: 2rem; /* h-8 */
+    width: 2rem; /* w-8 */
+  }
+}
+
+/* Animation para entrada suave */
+.cta-animate-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered animation para elementos */
+.cta-animate-in > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.cta-animate-in > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.cta-animate-in > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.cta-animate-in > *:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Screen reader only - para acessibilidade */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

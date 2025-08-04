@@ -1,0 +1,79 @@
+/* HeroSection - Seção principal da página inicial */
+.hero-container {
+  background-color: var(--color-background-primary);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  color: var(--color-content-primary);
+  font-size: 2.5rem; /* text-4xl */
+  font-weight: 800; /* font-extrabold */
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.hero-subtitle {
+  color: var(--color-content-secondary);
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 400;
+}
+
+.hero-feature-text {
+  color: var(--color-content-tertiary);
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500;
+}
+
+.hero-disclaimer {
+  color: var(--color-content-secondary);
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 400;
+}
+
+.hero-icon {
+  color: var(--color-content-primary);
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem; /* text-6xl */
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem; /* text-xl */
+  }
+}
+
+/* Animation para entrada suave */
+/* .hero-animate-in {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+/* Micro-animations para melhor UX */
+.hero-animate-in > * {
+  animation-delay: 0.1s;
+}
+
+.hero-animate-in > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hero-animate-in > *:nth-child(3) {
+  animation-delay: 0.3s;
+}

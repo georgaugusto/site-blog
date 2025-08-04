@@ -1,0 +1,51 @@
+/* Layout - Estrutura principal da aplicação */
+.layout-container {
+  background-color: var(--color-background-primary);
+  color: var(--color-content-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Screen reader only - para acessibilidade */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.layout-main {
+  /* Compensação para header fixo */
+  padding-top: 4rem; /* 64px - altura do header */
+  min-height: calc(100vh - 4rem);
+
+  /* Scroll behavior suave */
+  scroll-behavior: smooth;
+
+  /* Garantir que o conteúdo não sobreponha o header */
+  position: relative;
+  z-index: 1;
+}
+
+/* Focus management para acessibilidade */
+.layout-main:focus {
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .layout-main {
+    padding-top: 4rem; /* Manter consistente */
+  }
+}
+
+/* Print styles */
+@media print {
+  .layout-main {
+    padding-top: 0;
+  }
+}

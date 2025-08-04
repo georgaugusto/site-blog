@@ -1,0 +1,31 @@
+/* Import dos Design Tokens com Tailwind v4 */
+@import "./tokens.css";
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-background-primary);
+  color: var(--color-content-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* === COMPONENTES CUSTOMIZADOS === */
+/* Estilos globais compartilhados - componentes específicos têm seus próprios arquivos CSS */
+
+/* Estilos para o tema dark */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

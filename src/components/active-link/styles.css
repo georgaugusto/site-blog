@@ -1,0 +1,12 @@
+.active-link {
+  color: var(--color-content-primary);
+  transition: color 0.3s ease;
+}
+
+.active-link:hover {
+  color: var(--color-content-tertiary);
+}
+
+.active-link.active {
+  color: var(--color-content-tertiary);
+}
